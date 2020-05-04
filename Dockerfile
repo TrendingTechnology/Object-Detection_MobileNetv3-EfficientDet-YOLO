@@ -1,9 +1,9 @@
 # Resulting image is available at  imadelh/opencv_tf:full
 # It contains all weights and models ready to use.
-FROM imadelh/opencv_tf:prod
+FROM imadelh/opencv_tf:full
 
-ADD . /app
-WORKDIR /app/app
+# ADD . /app
+# WORKDIR /app/app
 
 ARG NB_USER
 ARG NB_UID
