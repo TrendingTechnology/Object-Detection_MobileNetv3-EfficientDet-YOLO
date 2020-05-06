@@ -7,7 +7,7 @@ docker run --rm -it -p 8888:8888 -v $(pwd):/app  imadelh/opencv_tf:base jupyter 
 
 Jupyter Lab will be accessible at 0.0.0.0:8888 and you can run notebooks for inference (in ./artifacts/) for each model.
 
-**NB**: make sure to download models artifacts for each model (uncomment cell where the model is downloaded).
+**NB**: make sure to download models artifacts for each model (uncomment cell where the model weights are downloaded).
 
 ## Models
 

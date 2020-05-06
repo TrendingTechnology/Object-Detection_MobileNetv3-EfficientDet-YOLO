@@ -1,0 +1,14 @@
+# opencv 4.3.0 should be installed from source
+# Use Docker image provided (imadelh/opencv_tf:full), it contains all requirements.
+tensorflow-cpu==2.1.0
+Pillow==7.1.1
+Cython
+flask
+gunicorn
+pycocotools
+pyyaml
+numpy
+matplotlib
+notebook
+jupyterlab
+
