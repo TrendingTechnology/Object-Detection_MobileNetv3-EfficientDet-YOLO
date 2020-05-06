@@ -32,7 +32,7 @@ def url_to_image(url, colors='BGR'):
 # initialize flask application
 app = Flask(__name__)
 
-# Load pre-trained models
+# models weights
 models_conf = {
     'yolo': {'config': "../artifacts/yolo_files/yolov3.cfg",
              'weights': "../artifacts/yolo_files/yolov3.weights"
