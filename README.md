@@ -18,8 +18,9 @@ Jupyter Lab will be accessible at 0.0.0.0:8888 and you can run notebooks for inf
 
 To run the API for object detection, you have to use the docker image that contains the pre-trained weights (imadelh/opencv_tf:full).
 
+```
 docker run --rm -it -p 8080:8080 imadelh/opencv_tf:full
-
+```
 
 The API can used as follows 
 
@@ -34,7 +35,6 @@ http://0.0.0.0:8080/predict/v1?model=yolo&image_url=https://imadelhanafi.com/dat
 
 Will result in 
 
-[{"bbox":[137.0,187.0,96,144],"classe":"cat","confidence":0.9843610525131226}]
-
+[{"bbox":[137.0,187.0,96,144],"confidence":0.9843610525131226,"label":"cat"}]
 
 #
