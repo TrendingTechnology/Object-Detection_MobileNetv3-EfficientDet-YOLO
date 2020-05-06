@@ -4,7 +4,7 @@ Object detection using OpenCv and Tensroflow with a serverless API on Google Clo
 
 - Blog post: https://imadelhanafi.com/posts/object_detection_yolo_efficientdet_mobilenet/
 
-- Live version: `https://vision.imadelhanafi.com/predict/v1?model=MODEL_NAME&image_url=URL` where MODEL_NAME is `yolo` or `mobilenet`.
+- Live version: `https://vision.imadelhanafi.com/predict/v1?model=MODEL_NAME&image_url=URL` where MODEL_NAME is `efficientdet` or `mobilenet`.
 
     example:
     ```
@@ -12,7 +12,7 @@ Object detection using OpenCv and Tensroflow with a serverless API on Google Clo
     ```
     will return
     ```
-    [{"bbox":[137.0,187.0,96,144],"confidence":0.9843610525131226,"label":"cat"}]
+    [{"bbox":[131,187,97,155],"confidence":0.7882333397865295,"label":"cat"}]
     ```
 
 ## Run Notebooks
@@ -29,7 +29,7 @@ Jupyter Lab will be accessible at http://127.0.0.1:8888 and you can run notebook
 To run the API for object detection, you have to use the docker image that contains the pre-trained weights (imadelh/opencv_tf:full).
 
 ```
-docker run --rm -it -p 8080:8080 imadelh/opencv_tf:full
+docker run --rm -it -p 8080:8080  efficientdet-mobilenet
 ```
 
 The API can used as follows 
