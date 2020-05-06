@@ -1,20 +1,6 @@
-# Resulting image is available at  imadelh/opencv_tf:full
-# It contains all weights and models ready to use.
+# imadelh/opencv_tf:full -> contains all requirements and weights for 3 models and ready to use for API
+# imadelh/opencv_tf:base -> contains all requirements to run notebooks (weights will be downloaded from the notebook).
+# see ./docker-base-requirements for details about requirements and docker image
+
 FROM imadelh/opencv_tf:full
-
-# ADD . /app
-# WORKDIR /app/app
-
-ARG NB_USER
-ARG NB_UID
-ENV USER ${NB_USER}
-ENV HOME /app
-
-RUN adduser --disabled-password \
-    --gecos "Default user" \
-    --uid ${NB_UID} \
-    ${NB_USER}
-WORKDIR ${HOME}
-USER ${USER}
-
-# CMD gunicorn --threads=4 --bind 0.0.0.0:8080 wsgi:app
+CMD gunicorn --bind 0.0.0.0:8080 wsgi:app
