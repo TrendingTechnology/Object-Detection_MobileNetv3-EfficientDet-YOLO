@@ -8,7 +8,7 @@ Object detection using OpenCv and Tensroflow with a serverless API on Google Clo
 
     example:
     ```
-    https://vision.imadelhanafi.com/predict/v1?model=yolo&image_url=https://imadelhanafi.com/data/draft/random/img2.jpg
+    https://vision.imadelhanafi.com/predict/v1?model=efficientdet&image_url=https://imadelhanafi.com/data/draft/random/img2.jpg
     ```
     will return
     ```
