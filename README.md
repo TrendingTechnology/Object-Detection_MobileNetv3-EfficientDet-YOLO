@@ -8,10 +8,12 @@ Object detection using OpenCv and Tensroflow with a serverless API on Google Clo
 
     example:
     ```
+    https://vision.imadelhanafi.com/predict/v1?model=mobilenet&image_url=https://imadelhanafi.com/data/draft/random/img4.jpg
+    #Returns:
+    [{"bbox":[114,17,186,222],"confidence":0.853282630443573,"label":"bear"}]
+  
     https://vision.imadelhanafi.com/predict/v1?model=yolo&image_url=https://imadelhanafi.com/data/draft/random/img2.jpg
-    ```
-    will return
-    ```
+    #Returns:
     [{"bbox":[137.0,187.0,96,144],"confidence":0.9843610525131226,"label":"cat"}]
     ```
 
