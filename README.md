@@ -37,11 +37,9 @@ The API can used as follows
 http://0.0.0.0:8080/predict/v1?model=NAME-OF-MODEL&image_url=IMAGE-URL
 ```
 
-Where NAME-OF-MODEL& can be : yolo, mobilenet or efficientdet
-IMAGE-URL : a direct URL to an image
+Where NAME-OF-MODEL can be: `yolo`, `mobilenet` or `efficientdet` and IMAGE-URL is a direct URL to an image
 
-
-example 
+Example:
 ```
 http://0.0.0.0:8080/predict/v1?model=yolo&image_url=https://imadelhanafi.com/data/draft/random/img2.jpg
 
