@@ -12,6 +12,7 @@ Object detection using OpenCv and Tensroflow with a serverless API on Google Clo
 
     example:
     ```
+    # NB : you can use services like https://imgbbb.com/ to get a direct link
     #Example1 of a detection request - MobileNet
     https://vision.imadelhanafi.com/predict/v1?model=mobilenet&image_url=https://imadelhanafi.com/data/draft/random/img4.jpg
     #Returns:
@@ -22,6 +23,8 @@ Object detection using OpenCv and Tensroflow with a serverless API on Google Clo
     #Returns:
     [{"bbox":[137.0,187.0,96,144],"confidence":0.9843610525131226,"label":"cat"}]
     ```
+
+
 
 ## Run Notebooks
 Clone the repo and run 
